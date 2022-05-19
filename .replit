@@ -1,0 +1,2 @@
+language = "gpp"
+run = "g++ main.cpp"
