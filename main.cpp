@@ -1,4 +1,3 @@
-
 #include <iostream>
 #include <string>
 #include "user.h"
@@ -10,7 +9,6 @@
 #include "report.h"
 #include "manager.h"
 #include "paymant.h"
-
 using namespace std;
 
 int main()
