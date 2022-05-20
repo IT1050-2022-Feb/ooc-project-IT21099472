@@ -8,6 +8,8 @@
 #include "Admin.h"
 #include "Resource.h"
 #include "report.h"
+#include "manager.h"
+#include "paymant.h"
 
 using namespace std;
 
@@ -38,6 +40,22 @@ int main()
 	cu1.displayCu();
 
 	cout << endl << endl;
+
+  
+  //manager class object
+	cout << "Manager" << endl;
+	manager me1 = manager("ME0001", "gayashan", "gayashan12", "gayashankkk");
+	me1.displayDetails();
+
+	cout << endl << endl;
+
+	//payment class object
+	cout << "Payment" << endl;
+	paymant pa1 = paymant(1000,"2022/02/03","VISA" ,&u2, &rs1);
+	pa1.displayPaymentDetails();
+
+	cout << endl << endl;
+
   
   //admin class object
 	cout << "admin" << endl;
