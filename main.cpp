@@ -1,9 +1,13 @@
+
 #include <iostream>
 #include <string>
 #include "user.h"
 #include "Review.h"
 #include "contact_us.h"
 #include "reservation.h"
+#include "Admin.h"
+#include "Resource.h"
+#include "report.h"
 
 using namespace std;
 
@@ -34,9 +38,24 @@ int main()
 	cu1.displayCu();
 
 	cout << endl << endl;
-
-
   
+  //admin class object
+	cout << "admin" << endl;
+	Admin admin1;
+	admin1.displaydetails();
+
+	cout << endl << endl;
+  
+	//resources class object
+	cout << "Resources" << endl;
+	Resource r1 = Resource("RE100", "Amaya", 1000.00, "event");
+	r1.displayResource();
+
+  cout << endl << endl;
+
+  //report class object
+	report report1=report("RP001",&rs1);
+	report1.displayReservationReport();
 
   
 }
